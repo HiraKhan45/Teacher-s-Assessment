@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Assessment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Teacher Assessment Form</h1>
+        <form id="assessmentForm">
+            <!-- Teacher's Name -->
+            <div class="form-group">
+                <label for="teacherName">Teacher's Name:</label><br>
+                <input type="text" id="teacherName" name="teacherName" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Campus -->
+            <div class="form-group">
+                <label for="campus">Campus:</label><br>
+                <input type="text" id="campus" name="campus" placeholder="Enter campus name" required>
+            </div>
+
+            <!-- Question 1 -->
+            <div class="question">
+                <label>1. What is the capital of Pakistan?</label><br>
+                <input type="radio" name="question1" value="Karachi" required> Karachi<br>
+                <input type="radio" name="question1" value="Islamabad"> Islamabad<br>
+                <input type="radio" name="question1" value="Lahore"> Lahore<br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label>2. Who is known as the father of computer science?</label><br>
+                <input type="radio" name="question2" value="Charles Babbage" required> Charles Babbage<br>
+                <input type="radio" name="question2" value="Alan Turing"> Alan Turing<br>
+                <input type="radio" name="question2" value="John von Neumann"> John von Neumann<br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label>3. What does HTML stand for?</label><br>
+                <input type="radio" name="question3" value="HyperText Markup Language" required> HyperText Markup Language<br>
+                <input type="radio" name="question3" value="HyperLink Markup Language"> HyperLink Markup Language<br>
+                <input type="radio" name="question3" value="HyperText Machine Language"> HyperText Machine Language<br>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+                <label for="project">Upload Your Project:</label><br>
+                <input type="file" id="project" name="project" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div id="successMessage" class="hidden">Your response has been submitted successfully!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

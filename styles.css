@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: "Book Antiqua", serif; /* Set the font */
+    background-color: #000; /* Black background */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background: #222; /* Dark gray box */
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #b19cd9; /* Dark purple border */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 600px; /* Adjust max-width for better look */
+    text-align: left; /* Align text to the left */
+    margin: auto;
+}
+
+/* Form Heading */
+h1 {
+    color: #b19cd9; /* Dark purple */
+    margin-bottom: 20px;
+    font-size: 28px; /* Increase heading size */
+    text-align: center; /* Center heading */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+}
+
+.form-group label {
+    color: #b19cd9; /* Dark purple for labels */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Smaller margin between label and input */
+    font-size: 16px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Adjusted margin for a smaller gap */
+    border: 1px solid #b19cd9; /* Dark purple border */
+    border-radius: 5px;
+    background: #333; /* Darker gray background */
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Question Styles */
+.question {
+    margin-bottom: 15px; /* Reduced space between questions */
+}
+
+.question label {
+    color: #b19cd9; /* Dark purple for questions */
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px; /* Reduced space between label and options */
+}
+
+/* Options (Radio Buttons) */
+input[type="radio"] + label {
+    color: #d8bfd8; /* Light purple for options */
+    font-size: 14px;
+    display: block; /* Stack options vertically */
+    margin-bottom: 5px; /* Reduced space between options */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #b19cd9; /* Dark purple button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Adjusted top margin */
+}
+
+.submit-btn:hover {
+    background-color: #a483c9; /* Lighter purple on hover */
+}
+
+/* Success Message */
+#successMessage {
+    margin-top: 20px;
+    padding: 10px;
+    background: #28a745; /* Green background for success */
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+        font-size: 12px;
+    }
+}
